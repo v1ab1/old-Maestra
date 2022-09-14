@@ -1,8 +1,9 @@
 body {
-  font-family: "Futura PT";
+  font-family: "Futura PT", Helvetica, Arial, sans-serif;
   font-size: 24px;
   letter-spacing: 0.04em;
   line-height: 145%;
+  margin: 0;
 }
 
 .heading {
@@ -22,15 +23,17 @@ body {
   border: 2px solid #DCAA72;
   border-radius: 8px;
   display: flex;
-  margin-top: 3px;
+  padding: 7px 10px;
 }
 .menu-callback div {
   font-size: 14px;
   color: #DCAA72;
-  font-weight: bold;
+  font-weight: 500;
+  font-family: "Futura PT", Helvetica, Arial, sans-serif;
 }
 .menu-callback svg {
   align-self: center;
+  margin-right: 10px;
 }
 
 .top-line {
@@ -43,4 +46,15 @@ body {
   display: flex;
   padding-top: 13px;
   justify-content: space-between;
+  margin: 0 20px;
+}
+
+.top-bar {
+  padding-bottom: 13px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.slider {
+  height: 524px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,12 +1,9 @@
-@font-face {
-    font-family: 'Futura PT';
-    src: url();
-}
 body 
-    font-family: 'Futura PT'
+    font-family: 'Futura PT', Helvetica, Arial, sans-serif
     font-size: 24px
     letter-spacing: 0.04em
     line-height: 145%
+    margin: 0
 .heading
     display: flex
     padding: 10px 20px
@@ -20,13 +17,15 @@ body
     border: 2px solid #DCAA72
     border-radius: 8px
     display: flex
-    margin-top: 3px
+    padding: 7px 10px
     div
         font-size: 14px
         color: #DCAA72
-        font-weight: bold
+        font-weight: 500
+        font-family: 'Futura PT', Helvetica, Arial, sans-serif
     svg
         align-self: center
+        margin-right: 10px
 .top-line
     height: 1px
     width: 100%
@@ -35,3 +34,9 @@ body
     display: flex
     padding-top: 13px
     justify-content: space-between
+    margin: 0 20px
+.top-bar
+    padding-bottom: 13px
+    position: sticky
+.slider
+    height: 524px
