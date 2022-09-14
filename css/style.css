@@ -51,8 +51,7 @@ body {
 
 .top-bar {
   padding-bottom: 13px;
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 101;
@@ -64,6 +63,19 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.header-dropdown {
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  width: 161px;
+  height: 346px;
+}
+
+.country-selector {
+  display: flex;
+  padding: 20px 0 20px 20px;
 }
 
 .slider {
