@@ -37,7 +37,7 @@ body
     margin: 0 20px
 .top-bar
     padding-bottom: 13px
-    position: relative
+    position: sticky
     top: 0
     left: 0
     z-index: 101
@@ -56,6 +56,23 @@ body
 .country-selector
     display: flex
     padding: 20px 0 20px 20px
+    overflow-x: scroll
+    -ms-overflow-style: none
+    scrollbar-width: none
+.country-selector::-webkit-scrollbar
+    display: none
+.country-flag
+    margin-right: 10px
+    opacity: 40%
+    display: flex
+    flex-shrink: 0
+.country-flag:hover
+    opacity: 100%
+.dropdown-link
+    padding: 0 0 20px 20px
+    line-height: 31px
+.dropdown-link:hover
+        color: #DCAA72
 .slider
     height: 524px
 .slider-mover
@@ -142,3 +159,8 @@ body
     line-height: 29px
     text-align: center
     letter-spacing: 0.15em
+.nav-menu
+    position: fixed
+    width: 100vw
+    height: 100vh
+    background-color: rgba(0,0,0,0.5)
