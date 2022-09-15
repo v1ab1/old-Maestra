@@ -25,3 +25,29 @@ function openCallback() {
         callbackButton.style.display = "none";
     }
 }
+
+const callbackName = document.getElementById('cbk-name'),
+    callbackPhone = document.getElementById('cbk-phone');
+
+function callbackError() {
+    if (callbackName.value == '') {
+        callbackName.style.borderBottom = '2px solid red';
+    }
+    if (callbackPhone.value == '') {
+        callbackPhone.style.borderBottom = '2px solid red';
+    }
+    if (callbackName.value != '' && callbackName.value != '') {
+        openCallback();
+        closeCallback();
+    } 
+}
+
+const callbackDone = document.getElementById('callback_done');
+
+function closeCallback() {
+    if (callbackDone.style.display == "none") {
+        callbackDone.style.display = "block";
+    } else {
+        callbackDone.style.display = "none";
+    }
+}
