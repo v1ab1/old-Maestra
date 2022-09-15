@@ -61,127 +61,157 @@
     </header>
     <main>
         <div class="top-bar">
-            <div class="top-bar-content">
-                <button onclick="openDropDown()" class="menu-bar" id="menu_bar">
-                    <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="30" height="2" fill="#DCAA72"/>
-                        <rect y="12" width="30" height="2" fill="#DCAA72"/>
-                        <rect y="24" width="20" height="2" fill="#DCAA72"/>
-                    </svg>
-                    <svg style="display: none;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L23 23M23 1L1 23" stroke="#DCAA72" stroke-width="2"/>
-                    </svg>                                                
-                </button>
-                <div class="menu-callback">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_162_1211)">
-                        <path d="M11.6908 8.85429L10.1994 7.36257C9.80148 6.96465 9.10626 6.96397 8.70768 7.36257L8.45898 7.61126L11.4422 10.5943L11.6908 10.3457C12.1037 9.93274 12.1024 9.26515 11.6908 8.85429Z" fill="#DCAA72"/>
-                        <path d="M7.94801 8.09459C7.63418 8.33771 7.18648 8.328 6.89972 8.04061L3.95089 5.08974C3.66348 4.80233 3.6538 4.3543 3.89692 4.04125L0.920572 1.06506C-0.35984 2.55756 -0.309778 4.80646 1.10338 6.21962L5.76985 10.8881C7.12594 12.2442 9.34723 12.424 10.9245 11.0709L7.94801 8.09459Z" fill="#DCAA72"/>
-                        <path d="M4.62896 1.7904L3.13757 0.29868C2.73965 -0.0992406 2.04442 -0.0999203 1.64584 0.29868L1.39715 0.547375L4.38036 3.53042L4.62896 3.2818C5.04188 2.86888 5.04052 2.20129 4.62896 1.7904Z" fill="#DCAA72"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_162_1211">
-                        <rect width="12" height="12" fill="white"/>
-                        </clipPath>
-                        </defs>
-                    </svg>
-                    <div class="menu-callback-text">
-                        Обратный звонок
-                    </div>                        
-                </div>
-            </div>
-            <div style="display: none;" id="dropdown" class="nav-menu">
-                <div class="header-dropdown">
-                    <div class="country-selector">
-                        <svg class="country-flag" style="opacity: 100%;" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_192_689)">
-                            <path d="M0 0.0192986V6.67292V13.3266V19.9802H30V13.3266V6.67292V0.0192986H0Z" fill="#F0F0F0"/>
-                            <path d="M30 0.0194721H0V19.9807H30V0.0194721Z" fill="#0052B4"/>
-                            <path d="M30 0.0194721H0V6.67298H30V0.0194721Z" fill="#F0F0F0"/>
-                            <path d="M30 13.3266H0V19.9801H30V13.3266Z" fill="#FF3F61"/>
+            <div style="position: relative; padding-bottom: 13px;">
+                <div class="top-bar-content">
+                    <div onclick="openDropDown()" class="menu-bar" id="menu_bar">
+                        <svg id="dropdown_icon1" style="display: block;" width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30" height="2" fill="#DCAA72"/>
+                            <rect y="12" width="30" height="2" fill="#DCAA72"/>
+                            <rect y="24" width="20" height="2" fill="#DCAA72"/>
+                        </svg>
+                        <svg id="dropdown_icon2" style="display: none;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L23 23M23 1L1 23" stroke="#DCAA72" stroke-width="2"/>
+                        </svg>                                                
+                    </div>
+                    <div class="menu-callback">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_162_1211)">
+                            <path d="M11.6908 8.85429L10.1994 7.36257C9.80148 6.96465 9.10626 6.96397 8.70768 7.36257L8.45898 7.61126L11.4422 10.5943L11.6908 10.3457C12.1037 9.93274 12.1024 9.26515 11.6908 8.85429Z" fill="#DCAA72"/>
+                            <path d="M7.94801 8.09459C7.63418 8.33771 7.18648 8.328 6.89972 8.04061L3.95089 5.08974C3.66348 4.80233 3.6538 4.3543 3.89692 4.04125L0.920572 1.06506C-0.35984 2.55756 -0.309778 4.80646 1.10338 6.21962L5.76985 10.8881C7.12594 12.2442 9.34723 12.424 10.9245 11.0709L7.94801 8.09459Z" fill="#DCAA72"/>
+                            <path d="M4.62896 1.7904L3.13757 0.29868C2.73965 -0.0992406 2.04442 -0.0999203 1.64584 0.29868L1.39715 0.547375L4.38036 3.53042L4.62896 3.2818C5.04188 2.86888 5.04052 2.20129 4.62896 1.7904Z" fill="#DCAA72"/>
                             </g>
                             <defs>
-                            <clipPath id="clip0_192_689">
-                            <rect width="30" height="20" rx="4" fill="white"/>
+                            <clipPath id="clip0_162_1211">
+                            <rect width="12" height="12" fill="white"/>
                             </clipPath>
                             </defs>
                         </svg>
-                        <a href="">
-                            <svg class="country-flag" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_192_656)">
-                                <path d="M30 -6.10352e-05H0V20.0002H30V-6.10352e-05Z" fill="#F0F0F0"/>
-                                <path d="M16.875 -0.00062561H13.125V8.12433H0V11.8743H13.125V19.9993H16.875V11.8743H30V8.12433H16.875V-0.00062561Z" fill="#FF3F61"/>
-                                <path d="M23.0734 13.478L30 17.3262V13.478H23.0734Z" fill="#0052B4"/>
-                                <path d="M18.2609 13.478L30 19.9997V18.1555L21.5805 13.478H18.2609Z" fill="#0052B4"/>
-                                <path d="M26.8731 19.9997L18.2609 15.2147V19.9997H26.8731Z" fill="#0052B4"/>
-                                <path d="M18.2609 13.478L30 19.9997V18.1555L21.5805 13.478H18.2609Z" fill="#F0F0F0"/>
-                                <path d="M18.2609 13.478L30 19.9997V18.1555L21.5805 13.478H18.2609Z" fill="#FF3F61"/>
-                                <path d="M5.29342 13.4779L0 16.4187V13.4779H5.29342Z" fill="#0052B4"/>
-                                <path d="M11.7392 14.3072V19.9997H1.49365L11.7392 14.3072Z" fill="#0052B4"/>
-                                <path d="M8.41951 13.478L0 18.1555V19.9997L11.7391 13.478H8.41951Z" fill="#FF3F61"/>
-                                <path d="M6.92666 6.52152L0 2.67332V6.52152H6.92666Z" fill="#0052B4"/>
-                                <path d="M11.7391 6.52109L0 -0.00062561V1.84355L8.41951 6.52109H11.7391Z" fill="#0052B4"/>
-                                <path d="M3.12695 -0.000198364L11.7392 4.7848V-0.000198364H3.12695Z" fill="#0052B4"/>
-                                <path d="M11.7391 6.52109L0 -0.00062561V1.84355L8.41951 6.52109H11.7391Z" fill="#F0F0F0"/>
-                                <path d="M11.7391 6.52109L0 -0.00062561V1.84355L8.41951 6.52109H11.7391Z" fill="#FF3F61"/>
-                                <path d="M24.7065 6.52164L30 3.58082V6.52164H24.7065Z" fill="#0052B4"/>
-                                <path d="M18.2609 5.6923V-0.000137329H28.5064L18.2609 5.6923Z" fill="#0052B4"/>
-                                <path d="M21.5805 6.52152L30 1.84398V-0.000198364L18.2609 6.52152H21.5805Z" fill="#FF3F61"/>
+                        <div onclick="openCallback()" class="menu-callback-text">
+                            Обратный звонок
+                        </div>                        
+                    </div>
+                </div>
+                <div onclick="openDropDown()" style="display: none;" id="dropdown" class="nav-menu">
+                    <div class="header-dropdown">
+                        <div class="country-selector">
+                            <svg class="country-flag" style="opacity: 100%;" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_192_689)">
+                                <path d="M0 0.0192986V6.67292V13.3266V19.9802H30V13.3266V6.67292V0.0192986H0Z" fill="#F0F0F0"/>
+                                <path d="M30 0.0194721H0V19.9807H30V0.0194721Z" fill="#0052B4"/>
+                                <path d="M30 0.0194721H0V6.67298H30V0.0194721Z" fill="#F0F0F0"/>
+                                <path d="M30 13.3266H0V19.9801H30V13.3266Z" fill="#FF3F61"/>
                                 </g>
                                 <defs>
-                                <clipPath id="clip0_192_656">
+                                <clipPath id="clip0_192_689">
                                 <rect width="30" height="20" rx="4" fill="white"/>
                                 </clipPath>
                                 </defs>
                             </svg>
-                        </a>
-                        <a href="">
-                            <svg class="country-flag" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_192_680)">
-                                <path d="M30 19.98H0V0.0187435H30V19.98Z" fill="#F0F0F0"/>
-                                <path d="M9.99978 19.98H0V0.0187435H9.99978V19.98Z" fill="#0052B4"/>
-                                <path d="M30 19.98H20.0002V0.0187435H30V19.98Z" fill="#FF3F61"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_192_680">
-                                <rect width="30" height="20" rx="4" transform="matrix(1 0 0 -1 0 20)" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                        <a href="">
-                            <svg class="country-flag" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_192_684)">
-                                <path d="M30 0.02005H0V19.9813H30V0.02005Z" fill="#F0F0F0"/>
-                                <path d="M30 0.02005H0V6.67356H30V0.02005Z" fill="#6DA544"/>
-                                <path d="M30 13.3264H0V19.9799H30V13.3264Z" fill="black"/>
-                                <path d="M9.99978 0.02005H0V19.9813H9.99978V0.02005Z" fill="#A2001D"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_192_684">
-                                <rect width="30" height="20" rx="4" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>  
-                        </a>                                                             
-                    </div>
-                    <div class="dropdown-link" style="color: #DCAA72;">
-                        О студии
-                    </div>
-                    <div class="dropdown-link">
-                        Продукты
-                    </div>
-                    <div class="dropdown-link">
-                        Команда
-                    </div>
-                    <div class="dropdown-link">
-                        Условия
-                    </div>
-                    <div class="dropdown-link">
-                        Контакты и Локации
+                            <a href="">
+                                <svg class="country-flag" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_192_656)">
+                                    <path d="M30 -6.10352e-05H0V20.0002H30V-6.10352e-05Z" fill="#F0F0F0"/>
+                                    <path d="M16.875 -0.00062561H13.125V8.12433H0V11.8743H13.125V19.9993H16.875V11.8743H30V8.12433H16.875V-0.00062561Z" fill="#FF3F61"/>
+                                    <path d="M23.0734 13.478L30 17.3262V13.478H23.0734Z" fill="#0052B4"/>
+                                    <path d="M18.2609 13.478L30 19.9997V18.1555L21.5805 13.478H18.2609Z" fill="#0052B4"/>
+                                    <path d="M26.8731 19.9997L18.2609 15.2147V19.9997H26.8731Z" fill="#0052B4"/>
+                                    <path d="M18.2609 13.478L30 19.9997V18.1555L21.5805 13.478H18.2609Z" fill="#F0F0F0"/>
+                                    <path d="M18.2609 13.478L30 19.9997V18.1555L21.5805 13.478H18.2609Z" fill="#FF3F61"/>
+                                    <path d="M5.29342 13.4779L0 16.4187V13.4779H5.29342Z" fill="#0052B4"/>
+                                    <path d="M11.7392 14.3072V19.9997H1.49365L11.7392 14.3072Z" fill="#0052B4"/>
+                                    <path d="M8.41951 13.478L0 18.1555V19.9997L11.7391 13.478H8.41951Z" fill="#FF3F61"/>
+                                    <path d="M6.92666 6.52152L0 2.67332V6.52152H6.92666Z" fill="#0052B4"/>
+                                    <path d="M11.7391 6.52109L0 -0.00062561V1.84355L8.41951 6.52109H11.7391Z" fill="#0052B4"/>
+                                    <path d="M3.12695 -0.000198364L11.7392 4.7848V-0.000198364H3.12695Z" fill="#0052B4"/>
+                                    <path d="M11.7391 6.52109L0 -0.00062561V1.84355L8.41951 6.52109H11.7391Z" fill="#F0F0F0"/>
+                                    <path d="M11.7391 6.52109L0 -0.00062561V1.84355L8.41951 6.52109H11.7391Z" fill="#FF3F61"/>
+                                    <path d="M24.7065 6.52164L30 3.58082V6.52164H24.7065Z" fill="#0052B4"/>
+                                    <path d="M18.2609 5.6923V-0.000137329H28.5064L18.2609 5.6923Z" fill="#0052B4"/>
+                                    <path d="M21.5805 6.52152L30 1.84398V-0.000198364L18.2609 6.52152H21.5805Z" fill="#FF3F61"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_192_656">
+                                    <rect width="30" height="20" rx="4" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg class="country-flag" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_192_680)">
+                                    <path d="M30 19.98H0V0.0187435H30V19.98Z" fill="#F0F0F0"/>
+                                    <path d="M9.99978 19.98H0V0.0187435H9.99978V19.98Z" fill="#0052B4"/>
+                                    <path d="M30 19.98H20.0002V0.0187435H30V19.98Z" fill="#FF3F61"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_192_680">
+                                    <rect width="30" height="20" rx="4" transform="matrix(1 0 0 -1 0 20)" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg class="country-flag" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_192_684)">
+                                    <path d="M30 0.02005H0V19.9813H30V0.02005Z" fill="#F0F0F0"/>
+                                    <path d="M30 0.02005H0V6.67356H30V0.02005Z" fill="#6DA544"/>
+                                    <path d="M30 13.3264H0V19.9799H30V13.3264Z" fill="black"/>
+                                    <path d="M9.99978 0.02005H0V19.9813H9.99978V0.02005Z" fill="#A2001D"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_192_684">
+                                    <rect width="30" height="20" rx="4" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>  
+                            </a>                                                             
+                        </div>
+                        <div class="dropdown-link" style="color: #DCAA72;">
+                            О студии
+                        </div>
+                        <div class="dropdown-link">
+                            Продукты
+                        </div>
+                        <div class="dropdown-link">
+                            Команда
+                        </div>
+                        <div class="dropdown-link">
+                            Условия
+                        </div>
+                        <div class="dropdown-link">
+                            Контакты и Локации
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div style="display: none;" class="callback-form-wrapper" id="callback_wrapper">
+            <div class="callback-form">
+                <div style="display: flex; justify-content: flex-end;">
+                    <div onclick="openCallback()">
+                        <svg id="dropdown_icon2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L23 23M23 1L1 23" stroke="#DCAA72" stroke-width="2"/>
+                        </svg>  
+                    </div>
+                </div>
+                <div class="callback-text">
+                    Пожалуйста оставьте свои контакты, чтобы наши специалисты связались с вами.
+                </div>
+                <div style="padding: 0 15px 0 15px;">
+                    <div class="form-name">
+                        <label id="cbk-label" for="cbk-name">name</label>
+                        <input class="cbki-name" id="cbk-name" type="text">
+                    </div>
+                    <div class="form-name" style="padding-top: 35px;">
+                        <label id="cbk-label" for="cbk-name">telephone</label>
+                        <input class="cbki-name" id="cbk-name" type="text">
+                    </div>
+                </div>
+                <div>
+                    <input class="cbk-button" type="submit" value="Отправить" style="margin: 40px auto 20px auto; background-color: #DCAA72;">
+                </div>
+            </div>
+            <div class="close-bg" onclick="openCallback()"></div>
         </div>
         <img class="slider" src="./media/silder1.png" alt="">
         <div>
