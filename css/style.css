@@ -103,14 +103,6 @@ body {
   color: #DCAA72;
 }
 
-.slider {
-  height: 524px;
-}
-
-.slider-mover {
-  margin-top: 67px;
-}
-
 .about {
   background-color: #F8F8F8;
 }
@@ -320,4 +312,23 @@ label {
 .cbk-button:hover {
   background-color: #F4AD5C;
   box-shadow: 0 5px 20px rgba(244, 173, 92, 0.5);
+}
+
+#viewport {
+  width: 100vw;
+  height: 524px;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  height: 524px;
+  width: 100vw;
+}
+
+.slide {
+  width: 100%;
+  height: 524px;
+  position: absolute;
+  transition: 500ms;
 }/*# sourceMappingURL=style.css.map */
