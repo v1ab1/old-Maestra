@@ -254,6 +254,9 @@ label
     position: absolute
     transition: 500ms
     display: none
+    overflow: hidden
+    justify-content: center
+    align-items: center
 .slider-button
     position: absolute
     bottom: 177px
@@ -274,3 +277,14 @@ label
     left: 132px
 .right-slider
     right: 132px
+.bg-black
+    opacity: 50%
+    position: absolute
+    top: 0
+    height: 100%
+    width: 100%
+    background-color: black
+.transition-opacity
+    transition-property: opacity
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    transition-duration: 150ms
