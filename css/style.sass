@@ -4,6 +4,9 @@ body
     letter-spacing: 0.04em
     line-height: 145%
     margin: 0
+    background-color: #F8F8F8
+header
+    background-color: white
 .heading
     display: flex
     padding: 10px 20px
@@ -120,6 +123,7 @@ body
 .about-wrapper
     display: flex
     flex-direction: column
+    background-color: white
     div
         color: rgba(0,0,0,0.8)
         font-weight: 450
@@ -140,6 +144,16 @@ body
         font-size: 14px
         line-height: 18px
         padding: 15px 20px
+        animation: radial-pulse-button 3s infinite
+@keyframes radial-pulse-button
+    0%
+        box-shadow: none
+    50%
+        background: #ffa53f
+        box-shadow: 0 5px 20px rgb(252 152 41)
+    100%
+        box-shadow: none
+        background: #DCAA72
 .our-team-wrapper
     background-color: #F8F8F8
 .our-team-header
@@ -267,6 +281,16 @@ label
     font-size: 18px
     line-height: 23px
     letter-spacing: 0.2em
+    animation: slider-button-animation 3s infinite
+@keyframes slider-button-animation
+    0%
+        box-shadow: none
+    50%
+        box-shadow: 0 5px 20px rgb(252 152 41)
+    100%
+        box-shadow: none
+.slider-button:hover
+    background-color: #DCAA72
 .left-slider, .right-slider
     cursor: pointer
     position: absolute
@@ -362,6 +386,7 @@ label
     flex-shrink: 0
     margin-right: 30px
     margin-bottom: 20px
+    box-shadow: 0 15px 30px rgb(0 0 0 / 8%)
     div
         display: flex
         flex-direction: column
@@ -384,3 +409,47 @@ label
     text-transform: uppercase
     color: #707070
     margin: 0 15px 10px 15px
+.history-header
+    background-color: #F8F8F8
+.history-wrapper
+    margin: 10px 20px 20px 20px
+    display: flex
+    overflow-x: scroll
+    flex-direction: row
+    background-color: #F8F8F8
+.history-header
+    font-family: 'Cormorant Garamond'
+    font-weight: 700
+    font-size: 24px
+    line-height: 29px
+    text-align: center
+    letter-spacing: 0.15em
+    text-transform: uppercase
+    color: #5B5D6F
+    margin-top: 30px
+.year-art
+    display: flex
+    justify-content: center
+    align-items: center
+.year-number
+    font-family: 'Cormorant Garamond'
+    font-weight: 700
+    font-size: 40px
+    line-height: 145%
+    text-align: center
+    letter-spacing: 0.04em
+    color: #DCAA72
+    margin: 10px 20px
+.history-text
+    font-size: 18px
+    line-height: 145%
+    letter-spacing: 0.04em
+    color: rgba(0, 0, 0, 0.8)
+.history1
+    margin-right: 30px
+.history2
+    display: flex
+    flex-direction: column
+    align-content: flex-end
+.history3
+    width: 375px
