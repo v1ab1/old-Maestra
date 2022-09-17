@@ -318,7 +318,6 @@ label {
 #viewport {
   width: 100vw;
   height: 524px;
-  overflow: hidden;
   position: relative;
   background-color: #000;
 }
@@ -328,6 +327,7 @@ label {
   height: 524px;
   width: 100vw;
   margin: auto;
+  overflow: hidden;
 }
 
 .slide {
@@ -350,6 +350,10 @@ label {
   height: 59px;
   color: white;
   text-transform: uppercase;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
 }
 
 .left-slider, .right-slider {
@@ -390,4 +394,50 @@ label {
   transition-property: scale;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 10000ms;
+}
+
+.slider-nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  z-index: 130;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  color: #fff;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.slider-nav div {
+  padding: 17px 10px;
+  max-width: auto;
+}
+
+.slider-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.active-slider-nav {
+  border-bottom: 4px solid #DCAA72;
+  position: relative;
+}
+
+.active-slider-nav::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 4px 4px;
+  border-color: transparent transparent #c7a677;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -4px;
 }/*# sourceMappingURL=style.css.map */
