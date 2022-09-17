@@ -59,6 +59,7 @@ showSlides(slideIndex);
 function plusSlides(n) {
     slideIndex += n;
     showSlides(slideIndex);
+    makeTimer();
 }
 
 function currentSlide(n) {
@@ -70,6 +71,7 @@ function showSlides(n) {
     let slides = document.getElementsByClassName("slide");
     let slidesImages = document.getElementsByClassName("slide-pic");
     let sliderMenu = document.getElementsByClassName("slider-menu");
+    let sliderMenuText = document.getElementsByClassName("slider-menu");
 
     if (n > slides.length) {
         slideIndex = 1;
@@ -91,8 +93,22 @@ function showSlides(n) {
     }
     for (i = 0; i < sliderMenu.length; i++) {
         sliderMenu[i].className = sliderMenu[i].className.replace(" active-slider-nav", "");
+        sliderMenuText[i].style.color = 'white';
     }
     slidesImages[slideIndex-1].style.transitionDelay = 'unset';    
     slidesImages[slideIndex-1].style.scale = '1.4';
     sliderMenu[slideIndex-1].className += " active-slider-nav";
+    sliderMenuText[slideIndex-1].style.color = '#DCAA72';
 }
+
+let timer = 0;
+
+function makeTimer(){
+    clearInterval(timer);
+    timer = setInterval(function(){
+      slideIndex++;
+      showSlides(slideIndex);
+    },6500);
+  }
+
+makeTimer();
