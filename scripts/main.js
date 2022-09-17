@@ -57,15 +57,15 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-    console.log(n);
     slideIndex += n;
-    console.log(slideIndex);
     showSlides(slideIndex);
 }
 
 function showSlides(n) {
     let i;
+    let b;
     let slides = document.getElementsByClassName("slide");
+    let slidesImages = document.getElementsByClassName("slide-pic");
 
     if (n > slides.length) {
         slideIndex = 1;
@@ -74,7 +74,17 @@ function showSlides(n) {
         slideIndex = slides.length;
     }
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
+        slides[i].style.opacity = '0';
     }
-    slides[slideIndex-1].style.display = 'block';
+    slides[slideIndex-1].style.opacity = '1';
+    console.log(slideIndex);
+    for (i = 0; i < slidesImages.length; i++) {
+        console.log(slideIndex);
+        if ((slideIndex-1) != i) {
+            slidesImages[i].style.scale = '1';
+            slidesImages[i].style.transitionDelay = '500ms';
+        }
+    }
+    slidesImages[slideIndex-1].style.transitionDelay = 'unset';    
+    slidesImages[slideIndex-1].style.scale = '1.4';
 }
