@@ -113,7 +113,7 @@ header {
 }
 
 .about-header {
-  font-family: "Cormorant_Garamond", Helvetica, Arial, sans-serif;
+  font-family: "Cormorant_Garamond", Helvetica, Arial, serif;
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
@@ -166,7 +166,7 @@ header {
 
 .about-query {
   padding-top: 30px;
-  font-family: "Cormorant_Garamond", Helvetica, Arial, sans-serif;
+  font-family: "Cormorant_Garamond", Helvetica, Arial, serif;
   font-style: italic;
   font-weight: 700;
   font-size: 19px;
@@ -239,7 +239,7 @@ header {
   padding: 30px 0;
   text-transform: uppercase;
   color: #5B5D6F;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant_Garamond", Helvetica, Arial, serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -597,7 +597,7 @@ label {
 }
 
 .history-header {
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant_Garamond", Helvetica, Arial, serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -615,7 +615,7 @@ label {
 }
 
 .year-number {
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant_Garamond", Helvetica, Arial, serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 145%;
@@ -651,7 +651,7 @@ label {
 }
 
 .history-quote-text {
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant_Garamond", Helvetica, Arial, serif;
   font-style: italic;
   font-weight: 700;
   font-size: 30px;
@@ -677,4 +677,70 @@ label {
   width: 50px;
   height: 4px;
   background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 21px;
+}
+
+.item {
+  margin: 60px 20px 0 20px;
+}
+
+.items-header {
+  font-family: "Cormorant_Garamond", Helvetica, Arial, serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #5B5D6F;
+  margin: 18px 0 30px 0;
+}
+
+.item-header {
+  margin: 25px 0 15px 0;
+  font-family: "Cormorant_Garamond", Helvetica, Arial, serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.item-about {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.item-li {
+  font-weight: 450;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.item-art {
+  width: 30px;
+  height: 1px;
+  background-color: #DCAA72;
+  margin-right: 10px;
+  margin-top: 9px;
+}
+
+.item-chapter {
+  display: flex;
+  margin-top: 15px;
+}
+
+.item-chapters {
+  margin-top: 15px;
+}
+
+.product-pic {
+  width: 335px;
+  height: 190px;
 }/*# sourceMappingURL=style.css.map */
