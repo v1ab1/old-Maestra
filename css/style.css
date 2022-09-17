@@ -327,6 +327,7 @@ label {
   position: relative;
   height: 524px;
   width: 100vw;
+  margin: auto;
 }
 
 .slide {
@@ -334,6 +335,7 @@ label {
   height: 524px;
   position: absolute;
   transition: 500ms;
+  display: none;
 }
 
 .slider-button {
@@ -344,16 +346,25 @@ label {
   border-radius: 10px;
   width: 270px;
   height: 59px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.left-slider, .right-slider {
+  cursor: pointer;
+  position: absolute;
+  bottom: 107px;
+  transition: 0.6s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .left-slider {
-  position: absolute;
-  bottom: 107px;
   left: 132px;
 }
 
 .right-slider {
-  position: absolute;
-  bottom: 107px;
   right: 132px;
 }/*# sourceMappingURL=style.css.map */
