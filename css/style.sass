@@ -270,7 +270,6 @@ label
 .slider-button
     position: absolute
     bottom: 177px
-    left: 52px
     border: 2px solid #DCAA72
     border-radius: 10px
     width: 270px
@@ -410,13 +409,17 @@ label
     color: #707070
     margin: 0 15px 10px 15px
 .history-header
-    background-color: #F8F8F8
 .history-wrapper
-    margin: 10px 20px 20px 20px
+    margin: 10px 20px 30px 20px
     display: flex
     overflow-x: scroll
     flex-direction: row
-    background-color: #F8F8F8
+    -ms-overflow-style: none
+    scrollbar-width: none
+#history
+    position: relative
+.history-wrapper::-webkit-scrollbar
+    display: none
 .history-header
     font-family: 'Cormorant Garamond'
     font-weight: 700
@@ -445,11 +448,41 @@ label
     line-height: 145%
     letter-spacing: 0.04em
     color: rgba(0, 0, 0, 0.8)
-.history1
+.history1, .history2, .history3
     margin-right: 30px
 .history2
     display: flex
     flex-direction: column
     align-content: flex-end
-.history3
-    width: 375px
+.history3, .history4
+    min-width: 335px
+.history-quote
+    margin-top: 30px
+.history-quote-text
+    font-family: 'Cormorant Garamond'
+    font-style: italic
+    font-weight: 700
+    font-size: 30px
+    line-height: 90%
+    text-align: center
+    letter-spacing: 0.04em
+    color: rgba(0, 0, 0, 0.8)
+.history-quote-art
+    display: flex
+    justify-content: center
+    margin-top: 20px
+.history-scrollbar
+    margin: 0 20px
+    display: flex
+    justify-content: space-between
+.history-scroll
+    width: 50px
+    height: 4px
+    background-color: rgba(0, 0, 0, 0.1)
+.history-bg
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    scale: 2
+    opacity: 0.4
