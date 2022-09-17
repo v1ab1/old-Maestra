@@ -85,12 +85,14 @@ function showSlides(n) {
         if ((slideIndex-1) != i) {
             slidesImages[i].style.scale = '1';
             slidesImages[i].style.transitionDelay = '500ms';
+            console.log(i);
+            // sliderMenu[i].className.remove("active-slider-nav");
         }
     }
     for (i = 0; i < sliderMenu.length; i++) {
-        sliderMenu[i].className = sliderMenu[i].className.replace("slider-menu active-slider-nav", "slider-menu");
+        sliderMenu[i].className = sliderMenu[i].className.replace(" active-slider-nav", "");
     }
     slidesImages[slideIndex-1].style.transitionDelay = 'unset';    
     slidesImages[slideIndex-1].style.scale = '1.4';
-    sliderMenu[slideIndex-1].className += "slider-menu active-slider-nav";
+    sliderMenu[slideIndex-1].className += " active-slider-nav";
 }
