@@ -186,3 +186,19 @@ function closeItem(number) {
     menuContent[number].style.display = 'none';
     allBody.style.overflow = 'unset';
 }
+
+const categories = document.getElementsByClassName("adresses-category"),
+    adressHead = document.getElementsByClassName("adress-head");
+
+function selectCategory(n) {
+    let i;
+    for (i = 0; i < categories.length; i++) {
+        if (n == i) {
+            categories[i].style.display = 'block';
+            adressHead[i].style.opacity = '1';
+        } else {
+            categories[i].style.display = 'none';
+            adressHead[i].style.opacity = '0.5';
+        }
+    }
+}

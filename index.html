@@ -1243,14 +1243,14 @@
         </div>
         <div class="adresses">
             <div class="adresses-header">
-                <div id="russian_header" style="opacity: 1;">
+                <div class="adress-head" onclick="selectCategory(0)" id="russian_header" style="opacity: 1;">
                     Офисы <br> в России
                 </div>
-                <div id="foreign_header">
+                <div class="adress-head" onclick="selectCategory(1)" id="foreign_header">
                     Офисы <br> за рубежом
                 </div>
             </div>
-            <div id="russian_adresses">
+            <div class="adresses-category" id="russian_adresses">
                 <div class="active-city">
                     <div class="city-name">
                         Москва
@@ -1274,7 +1274,7 @@
                     </div>
                 </div>
             </div>
-            <div id="foreign_adresses" style="display: none;">
+            <div class="adresses-category" id="foreign_adresses" style="display: none;">
                 <div>
                     <div class="city-name">
                         Qatar, Doha
