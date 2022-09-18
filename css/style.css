@@ -189,7 +189,8 @@ header {
   letter-spacing: 0.04em;
   padding: 20px;
 }
-.about-wrapper button {
+
+.about-button {
   margin: 10px auto 30px auto;
   background: #DCAA72;
   border-radius: 10px;
@@ -759,6 +760,7 @@ label {
 
 .portfolio-wrapper {
   background-image: url("./../media/PortfolioBG.png");
+  background-size: 100% 100%;
 }
 
 .portfolio-header {
@@ -867,4 +869,152 @@ label {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.price-wrapper {
+  padding: 30px 20px;
+}
+
+.price-header {
+  font-family: "Cormorant_Garamond", Helvetica, Arial, serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #5B5D6F;
+}
+
+.time-count {
+  position: relative;
+  margin: 30px 0 26px 0;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.time-count-text {
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+
+.time-count-art {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+}
+
+.about-price {
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.price {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #DCAA72;
+  margin-top: 10px;
+}
+
+.price-line {
+  width: 335px;
+  height: 2px;
+  background-color: #BFBFBF;
+  margin: 20px 0;
+}
+
+.dop-sells {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.dop-sell {
+  display: flex;
+  margin: 30px 0;
+}
+
+.dop-sells-header {
+  font-family: "Cormorant_Garamond", Helvetica, Arial, serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #5B5D6F;
+  margin-bottom: 20px;
+}
+
+.dop-sell-text {
+  font-size: 22px;
+  line-height: 145%;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.8);
+  margin-left: 25px;
+}
+
+.dop-sell-art {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.description {
+  display: flex;
+}
+
+.ds-art {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.8);
+  margin-right: 20px;
+}
+
+.ds-text {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.consultation {
+  background-color: #81766D;
+  padding: 20px;
+}
+
+.cn-header {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  padding-bottom: 10px;
+}
+
+.cn-ul ul {
+  padding-bottom: 30px;
+}
+.cn-ul ul li {
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: 0.04em;
+  padding-top: 20px;
+  color: white;
+  display: flex;
+}
+.cn-ul ul li svg {
+  margin-right: 10px;
+  margin-top: 7px;
+  flex-shrink: 0;
 }/*# sourceMappingURL=style.css.map */

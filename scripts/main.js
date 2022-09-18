@@ -2,7 +2,8 @@
 
 const DropDown = document.getElementById('dropdown'),
     DropDownIcon1 = document.getElementById('dropdown_icon1'),
-    DropDownIcon2 = document.getElementById('dropdown_icon2');
+    DropDownIcon2 = document.getElementById('dropdown_icon2'),
+    allBody = document.getElementById("all_body");
 
 function openDropDown() {
     if (DropDown.style.display == "block") {
@@ -21,8 +22,10 @@ const callbackButton = document.getElementById('callback_wrapper');
 function openCallback() {
     if (callbackButton.style.display == "none") {
         callbackButton.style.display = "block";
+        allBody.style.overflow = 'hidden';
     } else {
         callbackButton.style.display = "none";
+        allBody.style.overflow = 'unset';
     }
 }
 
@@ -47,8 +50,10 @@ const callbackDone = document.getElementById('callback_done');
 function closeCallback() {
     if (callbackDone.style.display == "none") {
         callbackDone.style.display = "block";
+        allBody.style.overflow = 'hidden';
     } else {
         callbackDone.style.display = "none";
+        allBody.style.overflow = 'unset';
     }
 }
 
@@ -174,8 +179,10 @@ const mainMenu = document.getElementById("main_menu"),
 function showItem(number) {
     mainMenu.style.display = 'flex';
     menuContent[number].style.display = 'flex';
+    allBody.style.overflow = 'hidden';
 }
 function closeItem(number) {
     mainMenu.style.display = 'none';
     menuContent[number].style.display = 'none';
+    allBody.style.overflow = 'unset';
 }
