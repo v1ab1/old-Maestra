@@ -612,10 +612,10 @@
                 </div>
             </div>
             <div class="history-scrollbar">
-                <div class="history-scroll" style="background-color: #DCAA72;"></div>
-                <div class="history-scroll"></div>
-                <div class="history-scroll"></div>
-                <div class="history-scroll"></div>
+                <div onclick="setScroll(0)" class="history-scroll" style="background-color: #DCAA72;"></div>
+                <div onclick="setScroll(317)" class="history-scroll"></div>
+                <div onclick="setScroll(642)" class="history-scroll"></div>
+                <div onclick="setScroll(1015)" class="history-scroll"></div>
             </div>
         </div>
         <div class="items-wrapper">
@@ -623,7 +623,9 @@
                 Продукты
             </div>
             <div class="item" style="margin-top: 0px;">
-                <img class="product-pic" src="./media/slider1.png" alt="">
+                <div class="product-pic">
+                    <img src="./media/slider1.png" alt="" style="scale: 1.16;">
+                </div>
                 <div>
                     <div class="item-header">
                         Дизайн интерьера и архитектурное проектирование
@@ -659,8 +661,10 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <img class="product-pic" src="./media/product2.png" alt="">
+            <div class="item bg2">
+                <div class="product-pic">
+                    <img src="./media/product2.png" alt="">
+                </div>
                 <div>
                     <div class="item-header">
                         Подбор материалов и комплектация проектов
@@ -696,8 +700,10 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <img class="product-pic" src="./media/product3.png" alt="">
+            <div class="item bg3">
+                <div class="product-pic">
+                    <img src="./media/product3.png" alt="">
+                </div>
                 <div>
                     <div class="item-header">
                         Строительство и ремонт
@@ -733,8 +739,10 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <img class="product-pic" src="./media/product4.png" alt="">
+            <div class="item bg4">
+                <div class="product-pic">
+                    <img src="./media/product4.png" alt="">
+                </div>
                 <div>
                     <div class="item-header">
                         Декорирование интерьеров
@@ -744,8 +752,10 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <img class="product-pic" src="./media/product5.png" alt="">
+            <div class="item bg5">
+                <div class="product-pic">
+                    <img src="./media/product5.png" alt="" style="scale: 1.46">
+                </div>
                 <div>
                     <div class="item-header">
                         Подбор недвижимости в России и за рубежом
@@ -780,6 +790,38 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="portfolio-wrapper">
+            <div class="portfolio-header">наши проекты</div>
+            <div class="portfolio-content">
+                <div class="portfolio-left">
+                    <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 31L2 16L17 1" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="portfolio-items">
+                    <div class="portfolio-item">
+                        <img src="./media/portfolio1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="portfolio-right">
+                    <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L16 16L1 31" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
+                    </svg> 
+                </div>
+            </div>
+            <div class="portfolio-nav">
+                <div class="portfolio-nav-bar"></div>
+                <div class="portfolio-nav-bar"></div>
+                <div class="portfolio-nav-bar"></div>
+                <div class="portfolio-nav-bar"></div>
+                <div class="portfolio-nav-bar"></div>
+                <div class="portfolio-nav-bar"></div>
+                <div class="portfolio-nav-bar"></div>
+            </div>
+            <div class="portfolio-button-wrapper">
+                <button>Подробнее</button>
             </div>
         </div>
     </main>

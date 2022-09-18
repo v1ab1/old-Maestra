@@ -479,7 +479,8 @@ label
     background-color: rgba(0, 0, 0, 0.1)
     margin-bottom: 21px
 .item
-    margin: 60px 20px 0 20px
+    padding: 60px 20px 0 20px
+    position: relative
 .items-header
     font-family: 'Cormorant_Garamond', Helvetica, Arial, serif
     font-weight: 700
@@ -523,5 +524,65 @@ label
 .item-chapters
     margin-top: 15px
 .product-pic
-    width: 335px
+    width: calc(100vw - 40px)
     height: 190px
+    display: flex
+    justify-content: center
+    overflow: hidden
+    img
+        align-self: center
+.items-wrapper
+    margin-bottom: 30px
+// .item::before
+//     content: ""
+//     background-image: url("./../media/slider1.png")
+//     background-size: cover
+//     position: absolute
+//     top: 0px
+//     right: 0px
+//     bottom: 0px
+//     left: 0px
+//     opacity: 0.03
+// .bg2::before
+//     background-image: url("./../media/product2.png")
+// .bg3::before
+//     background-image: url("./../media/product3.png")
+// .bg4::before
+//     background-image: url("./../media/product4.png")
+// .bg5::before
+//     background-image: url("./../media/product5.png")
+.portfolio-wrapper
+    background-image: url("./../media/PortfolioBG.png")
+.portfolio-header
+    font-family: 'Cormorant_Garamond', Helvetica, Arial, serif
+    font-weight: 700
+    font-size: 24px
+    line-height: 29px
+    text-align: center
+    letter-spacing: 0.15em
+    text-transform: uppercase
+    color: #FFFFFF
+    padding-bottom: 10px
+    padding-top: 30px
+.portfolio-content
+    padding: 20px 0
+    padding-right: 0
+    display: flex
+    justify-content: space-between
+    overflow-x: hidden
+.portfolio-left, .portfolio-right
+    margin: 0 20px
+    align-self: center
+.portfolio-nav-bar
+    height: 4px
+    width: 40px
+    background-color: rgba(255, 255, 255, 0.2)
+.portfolio-nav
+    display: flex
+    justify-content: space-between
+    margin: 0 20px
+.portfolio-button-wrapper
+    button
+        padding: 10px 20px
+        background-color: white
+        border-radius: 10px

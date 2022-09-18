@@ -115,7 +115,6 @@ let scrollElement = document.getElementsByClassName('history-scroll');
 
 function progressBar(){
     let i;
-    console.log(document.getElementById('history_wrapper').scrollLeft);
     for (i = 0; i < scrollElement.length; i++) {
         scrollElement[i].style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
     }
@@ -129,4 +128,8 @@ function progressBar(){
     if (document.getElementById('history_wrapper').scrollLeft >= 800) {
         scrollElement[3].style.backgroundColor = '#DCAA72';
     }
+}
+
+function setScroll(xScroll){
+    document.getElementById('history_wrapper').scrollLeft = xScroll;
 }
