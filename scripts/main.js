@@ -133,3 +133,37 @@ function progressBar(){
 function setScroll(xScroll){
     document.getElementById('history_wrapper').scrollLeft = xScroll;
 }
+
+let PortfolioIndex = 1;
+
+showPortfolio(PortfolioIndex);
+
+function plusPortfolio(n) {
+    PortfolioIndex += n;
+    showPortfolio(PortfolioIndex);
+}
+
+function currentPortfolio(n) {
+    showPortfolio(PortfolioIndex = n);
+}
+
+function showPortfolio(n) {
+    let i;
+    let slides = document.getElementsByClassName("portfolio-item");
+    let sliderMenu = document.getElementsByClassName("portfolio-nav-bar");
+
+    if (n > slides.length) {
+        PortfolioIndex = 1;
+    }
+    if (n < 1) {
+        PortfolioIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slides[PortfolioIndex-1].style.display = 'flex';
+    for (i = 0; i < sliderMenu.length; i++) {
+        sliderMenu[i].className = sliderMenu[i].className.replace(" active-port", "");
+    }
+    sliderMenu[PortfolioIndex-1].className += " active-port";
+}
