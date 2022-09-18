@@ -800,7 +800,7 @@
                         <path d="M17 31L2 16L17 1" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
                     </svg>
                 </div>
-                <div class="portfolio-items">
+                <div onclick="showItem(PortfolioIndex-1)" class="portfolio-items">
                     <div class="portfolio-item">
                         <img src="./media/portfolio1.jpg" alt="">
                     </div>
@@ -839,7 +839,137 @@
                 <div onclick="currentPortfolio(7)" class="portfolio-nav-bar"></div>
             </div>
             <div class="portfolio-button-wrapper">
-                <button>Подробнее</button>
+                <button onclick="showItem(PortfolioIndex-1)">Подробнее</button>
+            </div>
+        </div>
+        <div class="item-full-menu" style="display: none;" id="main_menu">
+            <div class="item-wrapper">
+                <div class="item-content" style="display: none;">
+                    <div>
+                        <img class="item-pic1" src="./media/portfolio1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio1/1.jpeg" alt="">
+                    </div>
+                    <div style="height: 160px;">
+                        <img src="./media/Portfolio1/2.jpg" alt="">
+                        <img src="./media/Portfolio1/3.jpg" alt="">
+                        <img src="./media/Portfolio1/4.jpg" alt="">  
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio1/5.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio1/6.jpg" alt="">
+                    </div>
+                    <div style="height: 240px;">
+                        <img src="./media/Portfolio1/7.jpg" alt="">
+                        <img src="./media/Portfolio1/8.jpg" alt=""> 
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio1/9.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio1/10.jpg" alt="">
+                    </div>
+                    <div style="height: 240px;">
+                        <img src="./media/Portfolio1/11.jpg" alt="">
+                        <img src="./media/Portfolio1/12.jpg" alt=""> 
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio1/13.jpg" alt="">
+                    </div>
+                    <div style="height: 240px;">
+                        <img src="./media/Portfolio1/14.jpg" alt="">
+                        <img src="./media/Portfolio1/15.jpg" alt=""> 
+                    </div>
+                    <div>
+                        <iframe style="width: 335px; height: 225px" src="https://kuula.co/share/collection/7YJMq?fs=1&vr=0&sd=1&thumbs=1&info=1&logo=1&gcl=1" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="item-content" style="display: none;">
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio2/1.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio2/2.jpg" alt="">
+                    </div>
+                    <div style="height: 160px;">
+                        <img src="./media/Portfolio2/3.jpg" alt="">
+                        <img src="./media/Portfolio2/4.jpg" alt="">
+                        <img src="./media/Portfolio2/5.jpg" alt="">  
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio2/6.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio2/7.jpg" alt="">
+                    </div>
+                    <div style="height: 240px;">
+                        <img src="./media/Portfolio2/8.jpg" alt="">
+                        <img src="./media/Portfolio2/9.jpg" alt=""> 
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio2/10.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio2/11.jpg" alt="">
+                    </div>
+                    <div style="height: 240px;">
+                        <img src="./media/Portfolio2/13.jpg" alt="">
+                        <img src="./media/Portfolio2/14.jpg" alt=""> 
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio2/15.jpg" alt="">
+                    </div>
+                    <div>
+                        <iframe style="width: 335px; height: 225px" src="https://kuula.co/share/collection/7YK4P?fs=1&vr=0&sd=1&thumbs=1&info=1&logo=1&gcl=1" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="cross" onclick="closeItem(PortfolioIndex-1)">
+                    <img src="./media/close-popup-mobile.svg" alt="">
+                </div>
+                <div class="item-content" style="display: none;">
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio3/1.jpeg" alt="">
+                    </div>
+                    <iframe style="width: 335px; height: 225px" src="https://kuula.co/share/76Jj2?fs=1&vr=1&sd=1&initload=1&thumbs=1&chromeless=1&logo=0&gcl=1" frameborder="0"></iframe>
+                    <div style="height: 160px;">
+                        <img src="./media/Portfolio1/2.jpg" alt="">
+                        <img src="./media/Portfolio1/3.jpg" alt="">
+                        <img src="./media/Portfolio1/4.jpg" alt="">  
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio1/5.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio1/6.jpg" alt="">
+                    </div>
+                    <div style="height: 240px;">
+                        <img src="./media/Portfolio1/7.jpg" alt="">
+                        <img src="./media/Portfolio1/8.jpg" alt=""> 
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio1/9.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio1/10.jpg" alt="">
+                    </div>
+                    <div style="height: 240px;">
+                        <img src="./media/Portfolio1/11.jpg" alt="">
+                        <img src="./media/Portfolio1/12.jpg" alt=""> 
+                    </div>
+                    <div>
+                        <img class="item-pic1" src="./media/Portfolio1/13.jpg" alt="">
+                    </div>
+                    <div style="height: 240px;">
+                        <img src="./media/Portfolio1/14.jpg" alt="">
+                        <img src="./media/Portfolio1/15.jpg" alt=""> 
+                    </div>
+                    <div>
+                        <iframe style="width: 335px; height: 225px" src="https://kuula.co/share/collection/7YJMq?fs=1&vr=0&sd=1&thumbs=1&info=1&logo=1&gcl=1" frameborder="0"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

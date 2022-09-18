@@ -5,6 +5,7 @@ body {
   line-height: 145%;
   margin: 0;
   background-color: #F8F8F8;
+  position: relative;
 }
 
 header {
@@ -786,6 +787,10 @@ label {
   align-self: center;
 }
 
+.portfolio-left:active svg path, .portfolio-right:active svg path {
+  stroke-opacity: 1;
+}
+
 .portfolio-nav-bar {
   height: 4px;
   width: 40px;
@@ -820,4 +825,46 @@ label {
 
 .active-port {
   background-color: #F8F8F8;
+}
+
+.item-full-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: scroll;
+}
+
+.item-wrapper {
+  bottom: 0;
+  padding: 40px 0;
+  margin: 10px;
+  background-color: white;
+  overflow-y: scroll;
+  width: calc(100vw - 20px);
+  overflow-x: hidden;
+}
+
+.item-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item-content div {
+  margin: 0 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  width: calc(100vw - 40px);
+}
+.item-content div img {
+  flex-shrink: 1;
+  margin-right: 10px;
+}
+
+.cross {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }/*# sourceMappingURL=style.css.map */

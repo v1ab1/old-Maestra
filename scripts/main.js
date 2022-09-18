@@ -167,3 +167,15 @@ function showPortfolio(n) {
     }
     sliderMenu[PortfolioIndex-1].className += " active-port";
 }
+
+const mainMenu = document.getElementById("main_menu"),
+    menuContent = document.getElementsByClassName("item-content");
+
+function showItem(number) {
+    mainMenu.style.display = 'flex';
+    menuContent[number].style.display = 'flex';
+}
+function closeItem(number) {
+    mainMenu.style.display = 'none';
+    menuContent[number].style.display = 'none';
+}
