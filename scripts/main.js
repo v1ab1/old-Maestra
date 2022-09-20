@@ -62,6 +62,7 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
+    clearInterval(timer);
     slideIndex += n;
     showSlides(slideIndex);
     makeTimer();

@@ -6,6 +6,15 @@ body {
   margin: 0;
   background-color: #F8F8F8;
   position: relative;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border: 0;
 }
 
 header {
@@ -29,7 +38,7 @@ header {
   border: 2px solid #DCAA72;
   border-radius: 8px;
   display: flex;
-  padding: 7px 10px;
+  padding: 0 10px;
 }
 .menu-callback div {
   font-size: 14px;
@@ -352,7 +361,7 @@ label {
   box-shadow: 0 5px 20px rgba(244, 173, 92, 0.5);
 }
 
-#viewport {
+#viewport_slide {
   width: 100vw;
   height: 524px;
   position: relative;
@@ -380,6 +389,7 @@ label {
 
 .slider-button {
   position: absolute;
+  background-color: transparent;
   bottom: 177px;
   border: 2px solid #DCAA72;
   border-radius: 10px;
