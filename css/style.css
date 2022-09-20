@@ -23,8 +23,17 @@ header {
 
 iframe {
   height: 240px;
-  width: 100%;
+  width: 480px;
   vertical-align: middle;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin: 0;
+  padding: 0;
 }
 
 .heading {
