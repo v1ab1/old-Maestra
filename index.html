@@ -167,19 +167,29 @@
                             </a>                                                             
                         </div>
                         <div class="dropdown-link" style="color: #DCAA72;">
-                            О студии
+                            <a href="#about">
+                                О студии
+                            </a>
                         </div>
                         <div class="dropdown-link">
-                            Продукты
+                            <a href="#products">
+                                Продукты
+                            </a>
                         </div>
                         <div class="dropdown-link">
-                            Команда
+                            <a href="#team">
+                                Команда
+                            </a>
                         </div>
                         <div class="dropdown-link">
-                            Условия
+                            <a href="#price">
+                                Условия
+                            </a>
                         </div>
                         <div class="dropdown-link">
-                            Контакты и Локации
+                            <a href="#contacts">
+                                Контакты и Локации
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -236,37 +246,37 @@
                     <span class="slide-text">Интерьеры для жизни придуманные вручную</span>
                 </div>
                 <div class="slide trans" style="opacity: 0;">
-                    <img class="slide-pic trans-image" src="./media/mobileSlider2.png" alt="">
+                    <img class="slide-pic trans-image" src="./media/MobileSliders/mobileSlider2.png" alt="">
                     <div class="bg-black"></div>
                     <span class="slide-text">Рестораны</span>
                 </div>
                 <div class="slide trans" style="opacity: 0;">
-                    <img class="slide-pic trans-image" src="./media/mobileSlider3.png" alt="">
+                    <img class="slide-pic trans-image" src="./media/MobileSliders/mobileSlider3.png" alt="">
                     <div class="bg-black"></div>
                     <span class="slide-text">горные шале</span>
                 </div>
                 <div class="slide trans" style="opacity: 1;">
-                    <img class="slide-pic trans-image" src="./media/mobileSlider4.png" alt="">
+                    <img class="slide-pic trans-image" src="./media/MobileSliders/MobileSlider4.png" alt="">
                     <div class="bg-black"></div>
                     <span class="slide-text">таунхаусы</span>
                 </div>
                 <div class="slide trans" style="opacity: 0;">
-                    <img class="slide-pic trans-image" src="./media/mobileSlider5.png" alt="">
+                    <img class="slide-pic trans-image" src="./media/MobileSliders/mobileSlider5.png" alt="">
                     <div class="bg-black"></div>
                     <span class="slide-text">Средиземно<br>морские виллы</span>
                 </div>
                 <div class="slide trans" style="opacity: 0;">
-                    <img class="slide-pic trans-image" src="./media/mobileSlider6.png" alt="">
+                    <img class="slide-pic trans-image" src="./media/MobileSliders/mobileSlider6.png" alt="">
                     <div class="bg-black"></div>
                     <span class="slide-text">загородные дома</span>
                 </div>
                 <div class="slide trans" style="opacity: 0;">
-                    <img class="slide-pic trans-image" src="./media/mobileSlider7.png" alt="">
+                    <img class="slide-pic trans-image" src="./media/MobileSliders/mobileSlider7.png" alt="">
                     <div class="bg-black"></div>
                     <span class="slide-text">отели</span>
                 </div>
                 <div class="slide trans" style="opacity: 0;">
-                    <img class="slide-pic trans-image" src="./media/mobileSlider8.png" alt="">
+                    <img class="slide-pic trans-image" src="./media/MobileSliders/MobileSlider8.png" alt="">
                     <div class="bg-black"></div>
                     <span class="slide-text">квартиры</span>
                 </div>
@@ -283,7 +293,7 @@
                         <path d="M1 1L16 16L1 31" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
                     </svg>                    
                 </a>
-                <div class="slider-nav">
+                <div class="slider-nav" id="about">
                     <div onclick="currentSlide(1)" class="slider-menu">
                         Главная
                     </div>
@@ -361,8 +371,10 @@
                 <div class="about-button-text">
                     Нас считает экспертами тот, кто сам считается экспертом.
                 </div>
-                <button class="about-button">
+                <button class="about-button" id="team">
+                    <a href="#contacts">
                     Контакты
+                    </a>
                 </button>
             </div>
         </div>
@@ -432,7 +444,7 @@
             </div>
         </div>
         <div id="history">
-            <div class="history-header">
+            <div class="history-header" id="history_header">
                 История создания MAESTRA
             </div>
             <div onscroll="progressBar()" class="history-wrapper" id="history_wrapper">
@@ -611,11 +623,11 @@
                     </div>
                 </div>
             </div>
-            <div class="history-scrollbar">
+            <div onclick="scrollbarFix()" class="history-scrollbar" id="history_scrollbar">
                 <div onclick="setScroll(0)" class="history-scroll" style="background-color: #DCAA72;"></div>
                 <div onclick="setScroll(317)" class="history-scroll"></div>
                 <div onclick="setScroll(642)" class="history-scroll"></div>
-                <div onclick="setScroll(1015)" class="history-scroll"></div>
+                <div onclick="setScroll(1015)" class="history-scroll" id="products"></div>
             </div>
         </div>
         <div class="items-wrapper">
@@ -838,7 +850,7 @@
                 <div onclick="currentPortfolio(6)" class="portfolio-nav-bar"></div>
                 <div onclick="currentPortfolio(7)" class="portfolio-nav-bar"></div>
             </div>
-            <div class="portfolio-button-wrapper">
+            <div class="portfolio-button-wrapper" id="price">
                 <button onclick="showItem(PortfolioIndex-1)">Подробнее</button>
             </div>
         </div>
@@ -1237,7 +1249,7 @@
                 </button>
             </div>
         </div>
-        <div>
+        <div id="contacts">
             <div class="map" style="display: block">
                 <iframe frameborder="0" aria-hidden="false" tabindex="0" style="border: none;" allowfullscreen allow="xr-spatial-tracking; gyroscope; accelerometer" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2247.135616849777!2d37.6542182!3d55.7213953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b25c2ed9cd5%3A0xcb6609e51978d319!2z0J_QvtC70LvQsNGA0YE!5e0!3m2!1sru!2sru!4v1663523773037!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -1268,9 +1280,10 @@
                     <div class="adress-text">
                         Дербеневская набережная, 11
                     </div>
-                    <div class="adress-text" style="padding-top: 0; padding-bottom: 14px">
+                    <div class="adress-text" style="padding-top: 0; padding-bottom: 20px">
                         +7 495 3488844
                     </div>
+                    <div class="active-city-line" style="opacity: 1;"></div>
                 </div>
                 <div onclick="selectMap(1)" class="office" style="margin-top: 30px">
                     <div class="city-name">
@@ -1282,6 +1295,7 @@
                     <div class="adress-text">
                         +7 495 3488844
                     </div>
+                    <div class="active-city-line"></div>
                 </div>
             </div>
             <div class="adresses-category" id="foreign_adresses" style="display: none;">
@@ -1295,6 +1309,7 @@
                     <div class="adress-text" style="padding-top: 0; padding-bottom: 20px">
                         +7 495 3488844
                     </div>
+                    <div class="active-city-line"></div>
                 </div>
                 <div onclick="selectMap(3)" class="office" style="margin-top: 30px">
                     <div class="city-name">
@@ -1306,6 +1321,7 @@
                     <div class="adress-text">
                         +7 495 3488844
                     </div>
+                    <div class="active-city-line"></div>
                 </div>
             </div>
         </div>

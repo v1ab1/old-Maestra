@@ -191,7 +191,8 @@ function closeItem(number) {
 const categories = document.getElementsByClassName("adresses-category"),
     adressHead = document.getElementsByClassName("adress-head"),
     map = document.getElementsByClassName("map"),
-    office = document.getElementsByClassName("office");
+    office = document.getElementsByClassName("office"),
+    cityLine = document.getElementsByClassName("active-city-line");
 
 function selectCategory(n) {
     let i;
@@ -211,9 +212,11 @@ function selectMap(n) {
         if (n == i) {
             map[i].style.display = 'block';
             office[i].className += " active-city";
+            cityLine[i].style.opacity = "1";
         } else {
             map[i].style.display = 'none';
             office[i].className = office[i].className.replace(" active-city", "");
+            cityLine[i].style.opacity = "0";
         }
     }
 }
