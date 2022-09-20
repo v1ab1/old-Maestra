@@ -21,6 +21,12 @@ header {
   background-color: white;
 }
 
+iframe {
+  height: 240px;
+  width: 100%;
+  vertical-align: middle;
+}
+
 .heading {
   display: flex;
   padding: 10px 20px;
