@@ -238,3 +238,7 @@ function selectMap(n) {
         }
     }
 }
+function showDesktopSelector() {
+    let dekstopSelector = document.getElementById("desktop-country-selector");
+    dekstopSelector.style.display = 'block';
+}
