@@ -5,6 +5,7 @@ const DropDown = document.getElementById('dropdown'),
     DropDownIcon2 = document.getElementById('dropdown_icon2'),
     allBody = document.getElementById("all_body");
 
+
 function openDropDown() {
     if (DropDown.style.display == "block") {
         DropDown.style.display = "none";
@@ -71,6 +72,23 @@ function plusSlides(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
+
+let slidesImages = document.getElementsByClassName("slide-pic");
+
+function changeImage() {
+    if (window.innerWidth >= 1024) {
+        slidesImages[0].src = './media/slider1.png';
+        slidesImages[1].src = './media/slider2.jpg';
+        slidesImages[2].src = './media/slider3.jpg';
+        slidesImages[3].src = './media/slider4.jpg';
+        slidesImages[4].src = './media/slider5.jpg';
+        slidesImages[5].src = './media/slider6.jpg';
+        slidesImages[6].src = './media/slider7.jpg';
+        slidesImages[7].src = './media/slider8.jpeg';
+    }
+}
+
+changeImage();
 
 function showSlides(n) {
     let i;

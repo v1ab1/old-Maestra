@@ -7,6 +7,7 @@
     <title>Maestra</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/media.css">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body id="all_body">
@@ -60,7 +61,7 @@
         <div class="top-line"></div>
     </header>
     <main>
-        <div class="top-bar">
+        <div class="top-bar desktop">
             <div style="position: relative; padding-bottom: 13px;">
                 <div class="top-bar-content">
                     <div onclick="openDropDown()" class="menu-bar" id="menu_bar">
@@ -195,6 +196,67 @@
                 </div>
             </div>
         </div>
+        <div class="top-bar">
+            <div style="position: relative; padding-bottom: 13px;">
+                <div class="top-bar-content">
+                    <div class="dropdown-link" style="color: #DCAA72;">
+                        <a href="#about">
+                            О студии
+                        </a>
+                    </div>
+                    <div class="dropdown-link">
+                        <a href="#products">
+                            Продукты
+                        </a>
+                    </div>
+                    <div class="dropdown-link">
+                        <a href="#team">
+                            Команда
+                        </a>
+                    </div>
+                    <div class="dropdown-link">
+                        <a href="#price">
+                            Условия
+                        </a>
+                    </div>
+                    <div class="dropdown-link">
+                        <a href="#contacts">
+                            Контакты и Локации
+                        </a>
+                    </div>
+                    <div class="menu-callback">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_162_1211)">
+                            <path d="M11.6908 8.85429L10.1994 7.36257C9.80148 6.96465 9.10626 6.96397 8.70768 7.36257L8.45898 7.61126L11.4422 10.5943L11.6908 10.3457C12.1037 9.93274 12.1024 9.26515 11.6908 8.85429Z" fill="#DCAA72"/>
+                            <path d="M7.94801 8.09459C7.63418 8.33771 7.18648 8.328 6.89972 8.04061L3.95089 5.08974C3.66348 4.80233 3.6538 4.3543 3.89692 4.04125L0.920572 1.06506C-0.35984 2.55756 -0.309778 4.80646 1.10338 6.21962L5.76985 10.8881C7.12594 12.2442 9.34723 12.424 10.9245 11.0709L7.94801 8.09459Z" fill="#DCAA72"/>
+                            <path d="M4.62896 1.7904L3.13757 0.29868C2.73965 -0.0992406 2.04442 -0.0999203 1.64584 0.29868L1.39715 0.547375L4.38036 3.53042L4.62896 3.2818C5.04188 2.86888 5.04052 2.20129 4.62896 1.7904Z" fill="#DCAA72"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_162_1211">
+                            <rect width="12" height="12" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <div onclick="openCallback()" class="menu-callback-text">
+                            Обратный звонок
+                        </div>                        
+                    </div>
+                    <svg class="country-flag" style="opacity: 100%;" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_192_689)">
+                        <path d="M0 0.0192986V6.67292V13.3266V19.9802H30V13.3266V6.67292V0.0192986H0Z" fill="#F0F0F0"/>
+                        <path d="M30 0.0194721H0V19.9807H30V0.0194721Z" fill="#0052B4"/>
+                        <path d="M30 0.0194721H0V6.67298H30V0.0194721Z" fill="#F0F0F0"/>
+                        <path d="M30 13.3266H0V19.9801H30V13.3266Z" fill="#FF3F61"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_192_689">
+                        <rect width="30" height="20" rx="4" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
         <div style="display: none;" class="callback-form-wrapper" id="callback_wrapper">
             <div class="callback-form">
                 <div style="display: flex; justify-content: flex-end;">
@@ -240,7 +302,7 @@
         </div>
         <div id="viewport_slide">
             <div class="slider">
-                <div class="slide trans" style="opacity: 0;">
+                <div class="slide trans" style="opacity: 1;">
                     <img class="slide-pic trans-image" src="./media/MobileSliders/mobileSlider1.png" alt="">
                     <div class="bg-black"></div>
                     <span class="slide-text">Интерьеры для жизни придуманные вручную</span>
@@ -255,7 +317,7 @@
                     <div class="bg-black"></div>
                     <span class="slide-text">горные шале</span>
                 </div>
-                <div class="slide trans" style="opacity: 1;">
+                <div class="slide trans" style="opacity: 0;">
                     <img class="slide-pic trans-image" src="./media/MobileSliders/MobileSlider4.png" alt="">
                     <div class="bg-black"></div>
                     <span class="slide-text">таунхаусы</span>
