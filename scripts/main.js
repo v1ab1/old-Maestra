@@ -238,7 +238,12 @@ function selectMap(n) {
         }
     }
 }
+
+const dekstopSelector = document.getElementById("desktop-country-selector");
+
 function showDesktopSelector() {
-    let dekstopSelector = document.getElementById("desktop-country-selector");
     dekstopSelector.style.display = 'block';
+}
+function closeDesktopSelector() {
+    dekstopSelector.style.display = 'none';
 }
