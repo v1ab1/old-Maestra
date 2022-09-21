@@ -53,5 +53,51 @@
         line-height: 23px;
         letter-spacing: 0.04em;
         color: rgba(0, 0, 0, 0.8);
+        padding: 0;
+    }
+    .top-bar-content {
+        padding: 10px 60px;
+        margin: 0;
+    }
+    .header-links {
+        display: flex;
+        padding-right: 20px;
+        width: 650px;
+        justify-content: space-between;
+    }
+    .header-right-side {
+        display: flex;
+    }
+    .menu-callback {
+        margin-right: 20px;
+    }
+    .dropdown-link {
+        align-self: center;
+    }
+    .country-flag {
+        align-self: center;
+        margin-right: 0;
+    }
+    .desktop-country-selector {
+        position: absolute;
+        background-color: #fff;
+        right: 50px;
+        border-radius: 0.75rem;
+    }
+    .desktop-country {
+        display: flex;
+        padding: 15px 20px;
+    }
+    .desktop-country-text {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #707070;
+        margin-left: 10px;
+    }
+    .desktop-country > div {
+        display: flex;
+        align-items: center;
     }
 }
