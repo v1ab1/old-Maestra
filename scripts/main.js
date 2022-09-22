@@ -22,7 +22,7 @@ const callbackButton = document.getElementById('callback_wrapper');
 
 function openCallback() {
     if (callbackButton.style.display == "none") {
-        callbackButton.style.display = "block";
+        callbackButton.style.display = "flex";
         allBody.style.overflow = 'hidden';
     } else {
         callbackButton.style.display = "none";
@@ -50,7 +50,7 @@ const callbackDone = document.getElementById('callback_done');
 
 function closeCallback() {
     if (callbackDone.style.display == "none") {
-        callbackDone.style.display = "block";
+        callbackDone.style.display = "flex";
         allBody.style.overflow = 'hidden';
     } else {
         callbackDone.style.display = "none";

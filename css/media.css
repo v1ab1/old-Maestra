@@ -83,6 +83,9 @@
         background-color: #fff;
         border-radius: 0.75rem;
         z-index: 151;
+        display: none;
+        top: 100%;
+        right: 0;
     }
     .desktop-country {
         display: flex;
@@ -100,14 +103,6 @@
         display: flex;
         align-items: center;
     }
-    .dcs-bg {
-        display: none;
-        position: absolute;
-        top: 100%;
-        width: 100vw;
-        height: 100vh;
-        z-index: 150;
-    }
     .mobile {
         display: none;
     }
@@ -118,7 +113,7 @@
         display: flex;
         position: relative;
     }
-    a:hover #desktop-country-selector {
+    .main-country:hover #desktop-country-selector {
         display: block;
     }
 }
