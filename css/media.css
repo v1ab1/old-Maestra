@@ -1,7 +1,7 @@
 * {
     -webkit-tap-highlight-color: transparent;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .slide-pic {
         height: 100%;
     }
@@ -81,8 +81,8 @@
     .desktop-country-selector {
         position: absolute;
         background-color: #fff;
-        right: 50px;
         border-radius: 0.75rem;
+        z-index: 151;
     }
     .desktop-country {
         display: flex;
@@ -99,5 +99,26 @@
     .desktop-country > div {
         display: flex;
         align-items: center;
+    }
+    .dcs-bg {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100vw;
+        height: 100vh;
+        z-index: 150;
+    }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+    .main-country {
+        display: flex;
+        position: relative;
+    }
+    a:hover #desktop-country-selector {
+        display: block;
     }
 }
