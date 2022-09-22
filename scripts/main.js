@@ -238,3 +238,11 @@ function selectMap(n) {
         }
     }
 }
+
+function siteMenu() {
+    let yPosition = 0;
+    let aboutPosition = document.getElementById('about').scrollTop;
+    yPosition += (aboutPosition.offsetTop - aboutPosition.scrollTop + aboutPosition.clientTop);
+    console.log(aboutPosition.offsetTop);
+}
+siteMenu();

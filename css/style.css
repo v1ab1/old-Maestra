@@ -59,6 +59,7 @@ a {
   border-radius: 8px;
   display: flex;
   padding: 0 10px;
+  cursor: pointer;
 }
 .menu-callback div {
   font-size: 14px;
