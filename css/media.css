@@ -116,4 +116,8 @@
     .main-country:hover #desktop-country-selector {
         display: block;
     }
+    .product-pic {
+        width: 480px;
+        height: 650px;
+    }
 }
