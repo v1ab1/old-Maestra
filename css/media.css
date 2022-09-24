@@ -117,7 +117,48 @@
         display: block;
     }
     .product-pic {
-        width: 480px;
-        height: 650px;
+        width: 250px;
+        height: 338px;
+        flex-shrink: 0;
+        margin-right: 30px;
+    }
+    .item {
+        display: flex;
+        padding: 60px 160px 0 160px
+    }
+    .item-header {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.8);
+        margin-top: 0;
+    }
+    .item-about {
+        font-size: 16px;
+        line-height: 145%;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .item-chapters {
+        font-weight: 450;
+        font-size: 12px;
+        line-height: 160%;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .item-reverse {
+        flex-direction: row-reverse;
+    }
+    .item-reverse .product-pic {
+        margin-right: 0;
+        margin-left: 30px;
+    }
+    .portfolio-content, .portfolio-nav, .portfolio-button-wrapper {
+        display: none;
+    }
+    .portfolio-wrapper {
+        padding-bottom: 86px;
     }
 }
