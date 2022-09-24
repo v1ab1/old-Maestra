@@ -40,7 +40,7 @@
         font-size: 40px;
         padding: 0 115px;
     }
-    .history-scrollbar {
+    .history-scrollbar, .adresses-header {
         display: none;
     }
     .history-wrapper {
@@ -219,6 +219,10 @@
     .about-button-desktop-wrapper {
         display: flex;
     }
+    .consultation-button-wrapper {
+        display: block;
+        margin-top: 40px;
+    }
     .consultation-button {
         align-items: center;
         padding: 18px 32px;
@@ -232,5 +236,26 @@
         letter-spacing: 0.2em;
         text-transform: uppercase;
         color: #FFFFFF;
+        animation: radial-pulse-button 3s infinite;
+        margin: 0 auto;
+        display: flex;
+    }
+    .map iframe {
+        height: 594px;
+    }
+    .adresses {
+        padding: 30px 128px;
+    }
+    .office:nth-of-type(2) {
+        margin-top: 0;
+    }
+    .office:nth-of-type(3) {
+        margin-top: 30px;
+    }
+    .office {
+        width: 50%;
+    }
+    .adresses-category {
+        display: flex;
     }
 }

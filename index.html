@@ -1445,7 +1445,7 @@
                 </ul>
             </div>
             <div style="display: flex">
-                <button onclick="openCallback()" class="about-button" style="margin-bottom: 10px">
+                <button class="about-button" style="margin-bottom: 10px">
                     Получить консультацию
                 </button>
             </div>
@@ -1460,7 +1460,7 @@
                 </div>
             </div>
             <div class="consultation-button-wrapper">
-                <button class="consultation-button">
+                <button onclick="callbackErrorDesk()" class="consultation-button">
                     Получить консультацию
                 </button>
             </div>
@@ -1501,7 +1501,7 @@
                     </div>
                     <div class="active-city-line" style="opacity: 1;"></div>
                 </div>
-                <div onclick="selectMap(1)" class="office" style="margin-top: 30px">
+                <div onclick="selectMap(1)" class="office">
                     <div class="city-name">
                         Санкт-Петербург
                     </div>
@@ -1514,7 +1514,7 @@
                     <div class="active-city-line"></div>
                 </div>
             </div>
-            <div class="adresses-category" id="foreign_adresses" style="display: none;">
+            <div class="adresses-category display-none" id="foreign_adresses">
                 <div onclick="selectMap(2)" class="office">
                     <div class="city-name">
                         Qatar, Doha
@@ -1527,7 +1527,7 @@
                     </div>
                     <div class="active-city-line"></div>
                 </div>
-                <div onclick="selectMap(3)" class="office" style="margin-top: 30px">
+                <div onclick="selectMap(3)" class="office">
                     <div class="city-name">
                         UAE, Dubai
                     </div>

@@ -246,3 +246,18 @@ function siteMenu() {
     console.log(aboutPosition.offsetTop);
 }
 siteMenu();
+
+const callbackNameDesk = document.getElementById('cbk-name-desk'),
+    callbackPhoneDesk = document.getElementById('cbk-phone-desk');
+
+function callbackErrorDesk() {
+    if (callbackNameDesk.value == '') {
+        callbackNameDesk.style.borderBottom = '2px solid red';
+    }
+    if (callbackPhoneDesk.value == '') {
+        callbackPhoneDesk.style.borderBottom = '2px solid red';
+    }
+    if (callbackNameDesk.value != '' && callbackNameDesk.value != '') {
+        closeCallback();
+    } 
+}
