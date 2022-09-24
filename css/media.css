@@ -264,4 +264,279 @@
         width: unset;
         height: unset;
     }
+    .slide-pic {
+        height: unset;
+        width: 100%;
+    }
+    .heading {
+        padding: 30px 280px;
+    }
+    .numbers {
+        right: 280px;
+        font-size: 24px;
+        line-height: 31px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.8);
+        align-self: center;
+    }
+    .numbers div:nth-of-type(1) {
+        margin-bottom: 20px;
+    }
+    .top-bar-content {
+        padding: 10px 280px;
+    }
+    .dropdown-link {
+        font-size: 24px;
+        line-height: 31px;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .header-links {
+        padding-right: 40px;
+        width: 1080px;
+    }
+    .slider-nav {
+        justify-content: center;
+    }
+    .about-content {
+        margin: 0 490px;
+    }
+    .about-button {
+        display: block;
+    }
+    .about-wrapper {
+        padding: 24px 513px;
+    }
+    .about-wrapper div {
+        margin-right: 40px;
+        align-items: center;
+        font-weight: 450;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .slide-text {
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+    .menu-callback-text {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+    }
+    .about-button {
+        align-items: center;
+    }
+    .about-header {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+    }
+    .about-text {
+        font-size: 26px;
+        line-height: 145%;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.8);  
+    }
+    .art-right, .art-left {
+        width: 314px;
+    }
+    .about-query {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 90%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #707070;
+    }
+    .our-team-header {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+    }
+    .our-team {
+        padding: 40px 280px;
+    }
+    .member-photo {
+        width: 100%;
+    }
+    .member-box {
+        width: 310px;
+        margin-right: 40px;
+    }
+    .history-header {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+    }
+    .history-photo {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+    }
+    .history-desk {
+        display: flex;
+        margin-top: 71px;
+        padding: 0 280px;
+    }
+    .history-photo div img {
+        width: 420px;
+        height: 532px;
+    }
+    .history-photo div {
+        text-align: center;
+        font-size: 38px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .history-photo div:last-of-type {
+        font-weight: 450;
+        font-size: 20px;
+        line-height: 26px; 
+        text-align: center;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #707070;
+    }
+    .year-number {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 145%;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+    .year-art-mobile {
+        width: unset;
+        height: unset;
+    }
+    .year-number {
+        margin: 0 20px 12px 20px;
+    }
+    .history-text {
+        font-size: 24px;
+        line-height: 145%;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .history-quote-text {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 90%;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .history-quote {
+        margin-top: 40px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+    .history-quote-art-mobile {
+        width: unset;
+        height: unset;
+    }
+    .history-quote-art-mobile-middle {
+        width: unset;
+        height: unset;
+    }
+    .items-wrapper {
+        margin-top: 200px;
+    }
+    .items-header {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        padding: 0 280px;
+    }
+    .item {
+        padding: 60px 280px 0 280px;
+    }
+    .product-pic {
+        width: 480px;
+        height: 650px;
+        margin-right: 60px;
+    }
+    .item-header {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 30px;
+    }
+    .item-reverse .product-pic {
+        margin-right: 0;
+        margin-left: 60px;
+    }
+    .item-about {
+        font-size: 26px;
+        line-height: 145%;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .item-chapters {
+        margin-top: 60px;
+    }
+    .item-li {
+        font-weight: 450;
+        font-size: 20px;
+        line-height: 160%;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+    .portfolio-header {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+    }
+    .portfolio-content-desktop {
+        padding: 0 280px;
+    }
+    .portfolio-item-desktop {
+        width: 437px;
+        height: 300px;
+        margin-right: 16px;
+    }
+    .portfolio-button-wrapper-desktop {
+        bottom: 9px;
+    }
+    .price-header {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+    }
+    .time-count-text {
+        font-weight: 450;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 0.04em;
+    }
 }
