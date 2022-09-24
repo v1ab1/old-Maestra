@@ -1131,4 +1131,12 @@ label {
 
 .max-width {
   max-width: 100%;
+}
+
+.triple-image {
+  max-height: 160px;
+}
+
+.double-image {
+  max-height: 240px;
 }/*# sourceMappingURL=style.css.map */
