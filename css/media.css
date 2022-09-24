@@ -259,3 +259,9 @@
         display: flex;
     }
 }
+@media screen and (min-width: 1920px) {
+    .mobile-logo {
+        width: unset;
+        height: unset;
+    }
+}
