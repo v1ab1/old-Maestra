@@ -609,5 +609,30 @@
     .about-wrapper .about-button {
         display: flex;
     }
-
+    .consultation-content {
+        display: flex;
+    }
+    .about-button-desktop-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .form-name {
+        width: 100%;
+    }
+    .form-name:last-of-type {
+        margin-top: 30px;
+    }
+    .mr-40 {
+        margin-right: 0;
+    }
+    .adresses {
+        padding: 30px 0;
+    }
+    .city-name {
+        padding: 10px 20px 0 60px;
+    }
+    .adress-text {
+        padding: 10px 60px;
+    }
 }
