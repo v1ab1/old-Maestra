@@ -333,6 +333,8 @@
     }
     .about-button {
         align-items: center;
+        display: flex;
+        align-self: center;
     }
     .about-header {
         font-weight: 700;
@@ -539,4 +541,73 @@
         line-height: 36px;
         letter-spacing: 0.04em;
     }
+    .menu-callback-text {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+    }
+    .about-price {
+        font-size: 26px;
+        line-height: 145%;
+        letter-spacing: 0.04em;
+    }
+    .price {
+        font-size: 24px;
+        line-height: 31px;
+        letter-spacing: 0.12em;
+    }
+    .price-wrapper {
+        padding: 30px 397px;
+    }
+    .dop-sells-header {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: 0.04em;
+        width: 100%;
+    }
+    .dop-sells-text {
+        font-size: 26px;
+        line-height: 145%;
+        letter-spacing: 0.04em;
+    }
+    .dop-sells {
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .dop-sell {
+        width: 50%;
+    }
+    .ds-text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+    }
+    .cn-header {
+        font-size: 36px;
+        line-height: 46px;
+        letter-spacing: 0.04em;
+    }
+    .cn-ul ul li {
+        font-size: 26px;
+        line-height: 145%;
+        letter-spacing: 0.04em;
+    }
+    .cn-ul ul li svg {
+        margin-top: 15px;
+    }
+    .consultation {
+        padding: 20px 397px;
+    }
+    .about-button {
+        display: none;
+    }
+    .about-wrapper .about-button {
+        display: flex;
+    }
+
 }
