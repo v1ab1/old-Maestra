@@ -138,9 +138,6 @@ a {
   padding: 0 0 20px 20px;
   line-height: 31px;
 }
-.dropdown-link a {
-  color: black;
-}
 
 .dropdown-link:hover {
   color: #DCAA72;
@@ -1167,4 +1164,12 @@ label {
 
 .mr-40 {
   margin-right: 40px;
+}
+
+.dropdown-tag-desk {
+  color: black;
+}
+
+.yellow {
+  color: #DCAA72;
 }/*# sourceMappingURL=style.css.map */
