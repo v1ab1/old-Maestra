@@ -253,3 +253,29 @@ function callbackErrorDesk() {
         closeCallback();
     } 
 }
+
+let menuSection = document.querySelectorAll('dropdown-tag-desk');
+
+// for clickable event
+menuSection.forEach(v=> {
+  v.onclick = (()=> {
+   setTimeout(()=> {
+      menuSection.forEach(j=> j.classList.remove('yellow'))
+    v.classList.add('yellow')
+  },300)
+   })
+})
+
+// for window scrolldown event
+
+window.onscroll = (()=> {
+  let mainSection = document.querySelectorAll('section');
+
+  mainSection.forEach((v,i)=> {
+    let rect = v.getBoundingClientRect().y
+    if(rect < window.innerHeight-200){
+      menuSection.forEach(v=> v.classList.remove('yellow'))
+      menuSection[i].classList.add('yellow')
+    }
+  })
+})

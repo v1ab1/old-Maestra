@@ -167,27 +167,27 @@
                             </a>                                                             
                         </div>
                         <div class="dropdown-link" style="color: #DCAA72;">
-                            <a href="#about">
+                            <a class="dropdown-tag" href="#about">
                                 О студии
                             </a>
                         </div>
                         <div class="dropdown-link">
-                            <a href="#products">
+                            <a class="dropdown-tag" href="#products">
                                 Продукты
                             </a>
                         </div>
                         <div class="dropdown-link">
-                            <a href="#team">
+                            <a class="dropdown-tag" href="#team">
                                 Команда
                             </a>
                         </div>
                         <div class="dropdown-link">
-                            <a href="#price">
+                            <a class="dropdown-tag" href="#price">
                                 Условия
                             </a>
                         </div>
                         <div class="dropdown-link">
-                            <a href="#contacts">
+                            <a class="dropdown-tag" href="#contacts">
                                 Контакты и Локации
                             </a>
                         </div>
@@ -200,27 +200,27 @@
                 <div class="top-bar-content">
                     <div class="header-links">
                         <div class="dropdown-link" style="color: #DCAA72;">
-                            <a href="#about">
+                            <a class="dropdown-tag-desk" href="#about">
                                 О студии
                             </a>
                         </div>
                         <div class="dropdown-link">
-                            <a href="#team">
+                            <a class="dropdown-tag-desk" href="#team">
                                 Команда
                             </a>
                         </div>
                         <div class="dropdown-link">
-                            <a href="#products">
+                            <a class="dropdown-tag-desk" href="#products">
                                 Продукты
                             </a>
                         </div>
                         <div class="dropdown-link">
-                            <a href="#price">
+                            <a class="dropdown-tag-desk" href="#price">
                                 Условия
                             </a>
                         </div>
                         <div class="dropdown-link">
-                            <a href="#contacts">
+                            <a class="dropdown-tag-desk" href="#contacts">
                                 Контакты и Локации
                             </a>
                         </div>
@@ -380,7 +380,7 @@
             </div>
             <div class="close-bg" onclick="closeCallback()"></div>
         </div>
-        <section>
+        <section id="about">
             <div id="viewport_slide">
                 <div class="slider">
                     <div class="slide trans" style="opacity: 1;">
@@ -436,7 +436,7 @@
                             <path d="M1 1L16 16L1 31" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
                         </svg>                    
                     </a>
-                    <div class="slider-nav" id="about">
+                    <div class="slider-nav">
                         <div onclick="currentSlide(1)" class="slider-menu">
                             Главная
                         </div>
@@ -514,7 +514,7 @@
                     <div class="about-button-text">
                         Нас считает экспертами тот, кто сам считается экспертом.
                     </div>
-                    <button class="about-button" id="team">
+                    <button class="about-button">
                         <a href="#contacts">
                         Контакты
                         </a>
@@ -522,7 +522,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="team">
             <div class="our-team-wrapper">
                 <div class="our-team-header">
                     наша команда
@@ -789,11 +789,11 @@
                     <div onclick="setScroll(0)" class="history-scroll" style="background-color: #DCAA72;"></div>
                     <div onclick="setScroll(317)" class="history-scroll"></div>
                     <div onclick="setScroll(642)" class="history-scroll"></div>
-                    <div onclick="setScroll(1015)" class="history-scroll" id="products"></div>
+                    <div onclick="setScroll(1015)" class="history-scroll"></div>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="products">
             <div class="items-wrapper">
                 <div class="items-header">
                     Продукты
@@ -1072,12 +1072,12 @@
                     <div onclick="currentPortfolio(6)" class="portfolio-nav-bar"></div>
                     <div onclick="currentPortfolio(7)" class="portfolio-nav-bar"></div>
                 </div>
-                <div class="portfolio-button-wrapper" id="price">
+                <div class="portfolio-button-wrapper">
                     <button onclick="showItem(PortfolioIndex-1)">Подробнее</button>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="price">
             <div onclick="closeItem(PortfolioIndex-1)" class="item-full-menu" style="display: none;" id="main_menu">
                 <div class="item-wrapper">
                     <div class="item-content" style="display: none;">
@@ -1442,7 +1442,7 @@
         </section>
     </main>
     <footer>
-        <section>
+        <section id="contacts">
             <div class="consultation">
                 <div class="cn-header">
                     Консультация с дизайнером интерьера
@@ -1495,7 +1495,7 @@
                 </div>
             </div>
             <div class="conacts-adresses">
-                <div id="contacts">
+                <div>
                     <div class="map" style="display: block">
                         <iframe frameborder="0" aria-hidden="false" tabindex="0" style="border: none;" allowfullscreen allow="xr-spatial-tracking; gyroscope; accelerometer" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2247.135616849777!2d37.6542182!3d55.7213953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b25c2ed9cd5%3A0xcb6609e51978d319!2z0J_QvtC70LvQsNGA0YE!5e0!3m2!1sru!2sru!4v1663523773037!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
