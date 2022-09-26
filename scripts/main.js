@@ -254,28 +254,23 @@ function callbackErrorDesk() {
     } 
 }
 
-let menuSection = document.querySelectorAll('dropdown-tag-desk');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            document.querySelectorAll('.dropdown-tag-desk').forEach((link) => {
+                link.getAttribute('href').replace('#', '');
+                if (link.getAttribute('href').replace('#', '') === entry.target.id) {
+                    link.classList.add('yellow');
+                } else {
+                    link.classList.remove('yellow');
+                }
+            });
+        }
+    });
+}, {
+    threshold: 0.7
+});
 
-// for clickable event
-menuSection.forEach(v=> {
-  v.onclick = (()=> {
-   setTimeout(()=> {
-      menuSection.forEach(j=> j.classList.remove('yellow'))
-    v.classList.add('yellow')
-  },300)
-   })
-})
-
-// for window scrolldown event
-
-window.onscroll = (()=> {
-  let mainSection = document.querySelectorAll('section');
-
-  mainSection.forEach((v,i)=> {
-    let rect = v.getBoundingClientRect().y
-    if(rect < window.innerHeight-200){
-      menuSection.forEach(v=> v.classList.remove('yellow'))
-      menuSection[i].classList.add('yellow')
-    }
-  })
-})
+document.querySelectorAll('section').forEach(
+    (section) => observer.observe(section),
+);
