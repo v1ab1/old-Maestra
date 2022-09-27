@@ -258,6 +258,11 @@
     .adresses-category {
         display: flex;
     }
+    .about-button {
+        display: flex;
+        align-items: center;
+        align-self: center;
+    }
 }
 @media screen and (min-width: 1920px) {
     .mobile-logo {
@@ -661,5 +666,108 @@
     }
     .double-image {
         max-height: 200px;
+    }
+    iframe {
+        width: 280px;
+    }
+}
+@media screen and (min-width: 425px) {
+    .items-header {
+        margin-bottom: 0;
+    }
+    .triple-image {
+        max-height: 185px;
+    }
+    .double-image {
+        max-height: 278px;
+    }
+    .slide-pic {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .history-scrollbar, .adresses-header {
+        display: none;
+    }
+    .history-wrapper {
+        display: block;
+        padding: 0 60px;
+        margin: 0;
+    }
+    .items-header {
+        margin-top: 60px;
+    }
+    .max-height {
+        width: 100%;
+        max-height: unset;
+    }
+    .triple-image {
+        max-height: 359px;
+    }
+    .double-image {
+        max-height: 533px;
+    }
+    iframe {
+        width: 100%;
+        height: 485px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .max-height {
+        max-height: 100%;
+        width: unset;
+    }
+    .triple-image {
+        max-height: 488px;
+    }
+    .double-image {
+        max-height: 722px;
+    }
+    iframe {
+        height: 655px;
+    }
+    .second-button {
+        display: none;
+    }
+    .form-name {
+        width: 100%
+    }
+}
+@media screen and (min-width: 1024px) {
+    .slider-nav {
+        justify-content: center;
+    }
+    .about-wrapper {
+        justify-content: center;
+    }
+    .about-text {
+        margin-right: 40px;
+        align-self: center;
+    }
+    .member-photo {
+        width: 100%;
+    }
+    .member-box {
+        width: 315px;
+    }
+    .our-team-header {
+        font-size: 40px;
+        padding: 40px 115px;
+    }
+    .portfolio-item-desktop {
+        width: 315px;
+        margin-bottom: 20px;
+    }
+    .portfolio-button-wrapper-desktop {
+        bottom: 0;
+    }
+    .triple-image {
+        max-height: 699px;
+    }
+    .double-image {
+        max-height: 1031px;
+    }
+    iframe {
+        height: 932px;
     }
 }
