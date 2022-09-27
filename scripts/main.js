@@ -258,9 +258,14 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log('entry.isIntersecting');
         if (entry.isIntersecting) {
-            console.log('entry.isIntersecting');
             document.querySelectorAll('.dropdown-tag-desk').forEach((link) => {
-                link.getAttribute('href').replace('#', '');
+                if (link.getAttribute('href').replace('#', '') === entry.target.id) {
+                    link.classList.add('yellow');
+                } else {
+                    link.classList.remove('yellow');
+                }
+            });
+            document.querySelectorAll('.dropdown-tag').forEach((link) => {
                 if (link.getAttribute('href').replace('#', '') === entry.target.id) {
                     link.classList.add('yellow');
                 } else {
@@ -270,7 +275,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.7,
+    threshold: 0.1,
 });
 
 document.querySelectorAll('section').forEach(
