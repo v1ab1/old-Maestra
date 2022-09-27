@@ -771,7 +771,7 @@
         height: 932px;
     }
 }
-@media screen and (min-width: 2560px) {
+/* @media screen and (min-width: 2560px) {
     #viewport_slide {
         height: 900px;
     }
@@ -786,7 +786,8 @@
         bottom: 429px;
     }
     .slide-text {
-        bottom: 419px;
+        bottom: 397px;
+        font-size: 70px;
     }
     .menu-callback svg {
         width: 30px;
@@ -807,5 +808,52 @@
     .dropdown-link {
         font-size: 35px;
         padding: 5px 0;
+    }
+} */
+@media screen and (min-width: 2560px) {
+    #viewport_slide {
+        height: 900px;
+    }
+    .slider, .slide {
+        height: 900px;
+    }
+    .slide-pic {
+        width: 100%;
+        height: 100%;
+    }
+    .left-slider, .right-slider, .slide-text {
+        bottom: 429px;
+    }
+    .slide-text {
+        bottom: 416px;
+    }
+    .member-box {
+        width: 470px;
+    }
+    .portfolio-content-desktop {
+        padding: 0 264px 0 280px;
+    }
+    .portfolio-item-desktop {
+        width: 488px;
+        height: 325px;
+    }
+    .consultation-content {
+        justify-content: space-between;
+    }
+    .map iframe {
+        height: 1200px;
+    }
+    .item-wrapper {
+        width: 1420px;
+    }
+    .item-full-menu {
+        width: 100%;
+        justify-content: center;
+    }
+    .cross {
+        right: 570px;
+    }
+    .cross img {
+        width: 70px;
     }
 }
