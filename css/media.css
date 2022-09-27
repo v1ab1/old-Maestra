@@ -653,4 +653,13 @@
     .office:nth-of-type(2) {
         margin-top: 0;
     }
+    .item-content div img {
+        max-height: 100%;
+    }
+    .triple-image {
+        max-height: 132px;
+    }
+    .double-image {
+        max-height: 200px;
+    }
 }

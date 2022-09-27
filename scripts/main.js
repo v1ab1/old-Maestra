@@ -256,7 +256,6 @@ function callbackErrorDesk() {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log('entry.isIntersecting');
         if (entry.isIntersecting) {
             document.querySelectorAll('.dropdown-tag-desk').forEach((link) => {
                 if (link.getAttribute('href').replace('#', '') === entry.target.id) {
