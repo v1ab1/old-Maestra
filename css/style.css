@@ -894,14 +894,13 @@ label {
   justify-content: center;
 }
 .item-content div {
-  margin: 0 10px 10px 10px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   width: calc(100vw - 40px);
 }
 .item-content div img {
   flex-shrink: 1;
-  margin-right: 10px;
 }
 
 .cross {
