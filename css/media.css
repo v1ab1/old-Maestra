@@ -776,3 +776,19 @@
         width: 70px;
     }
 }
+@media screen and (min-width: 1px) {
+    .triple-image {
+        justify-content: space-between
+    }
+    .triple-image img {
+        width: 32%;
+        height: auto;
+    }
+    .double-image {
+        justify-content: space-between
+    }
+    .double-image img {
+        width: 49%;
+        height: auto;
+    }
+}
