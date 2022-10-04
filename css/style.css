@@ -1124,14 +1124,6 @@ label {
   max-width: 100%;
 }
 
-.triple-image {
-  max-height: 160px;
-}
-
-.double-image {
-  max-height: 240px;
-}
-
 .portfolio-content-desktop, .about-button-desktop-wrapper, .consultation-button-wrapper, .desktop, .display-none {
   display: none;
 }
